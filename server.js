@@ -14,7 +14,7 @@ app.use(express.static('public'));
 
 // Home route redirecting to room route
 app.get('/', (req, res) => {
-    res.redirect(`/${uuidV4()}`)
+    res.redirect(`/${uuidV4()}`);
 });
 
 app.get('/:room', (req, res) => {
